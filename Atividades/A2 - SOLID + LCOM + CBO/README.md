@@ -5,7 +5,7 @@ Para essa atividade foi requisitada a resolução dos execícios propostos pelo 
 ## Exercícios
 
 1. Qual princípio de projeto é violado pelo seguinte código?
-```
+    ```
     void onclick() {
     num1 = textfield1.value();
     c1 = BD.getConta(num1)
@@ -22,7 +22,7 @@ Para essa atividade foi requisitada a resolução dos execícios propostos pelo 
         rollback();
     }
     }
-```
+    ```
 2. Qual princípio de projeto é violado pelo seguinte código? Como você poderia alterar o código do método para atender a esse princípio?
     ```
     void sendMail(ContaBancaria conta, String msg) {
