@@ -28,6 +28,7 @@ Single Responsiblity Principle
 ## Justificativa:
 
 A função onclick() está assumindo diversas responsabilidades para si.
+
 1. Busca de valores nos campos de texto:
 
     ```{}
