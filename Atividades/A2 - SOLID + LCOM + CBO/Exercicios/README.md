@@ -2,7 +2,10 @@
 
 Segue em anexo os seguintes execícios, as respostas estão nos arquivos enumerados na mesma ordem que os exercícios
 
-1. Qual princípio de projeto é violado pelo seguinte código?
+---
+
+## 1. Qual princípio de projeto é violado pelo seguinte código?
+
     ```
     void onclick() {
     num1 = textfield1.value();
@@ -22,7 +25,8 @@ Segue em anexo os seguintes execícios, as respostas estão nos arquivos enumera
     }
     ```
 
-2. Qual princípio de projeto é violado pelo seguinte código? Como você poderia alterar o código do método para atender a esse princípio?
+## 2. Qual princípio de projeto é violado pelo seguinte código? Como você poderia alterar o código do método para atender a esse princípio?
+
     ```
     void sendMail(ContaBancaria conta, String msg) {
     Cliente cliente = conta.getCliente();
@@ -31,7 +35,8 @@ Segue em anexo os seguintes execícios, as respostas estão nos arquivos enumera
     }
     ```
 
-3. Qual princípio de projeto é violado pelo seguinte código? Como você poderia alterar o código do método para atender a esse princípio?
+## 3. Qual princípio de projeto é violado pelo seguinte código? Como você poderia alterar o código do método para atender a esse princípio?
+
     ```
     void imprimeDataContratacao(Funcionario func) {
     Date data = func.getDataContratacao();
@@ -40,7 +45,8 @@ Segue em anexo os seguintes execícios, as respostas estão nos arquivos enumera
     }
     ```
 
-4. Calcule o CBO e LCOM da seguinte classe: (Leia o Capitulo 5 do Livro do Marco Túlio - Engenharia de software moderna para aprender como realizar o Cálculo)
+## 4. Calcule o CBO e LCOM da seguinte classe: (Leia o Capitulo 5 do Livro do Marco Túlio - Engenharia de software moderna para aprender como realizar o Cálculo)
+
     ```
     class A extends B {
     C f1, f2, f3;
@@ -57,7 +63,8 @@ Segue em anexo os seguintes execícios, as respostas estão nos arquivos enumera
     }
     ```
 
-5. Qual das seguintes classes é mais coesa? Justifique computando os valores de LCOM de cada uma delas
+## 5. Qual das seguintes classes é mais coesa? Justifique computando os valores de LCOM de cada uma delas
+
     ```
     class A {
     X x = new X();
