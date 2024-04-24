@@ -62,9 +62,9 @@ void h() {
 
 Pares de Métodos (M) | Conjunto A | Interseção Conjunto A
 :-:|:-:|:-:
-(f, g) | A(f) = {x} &nbsp; A(g) = {x} | {x}
-(f, h) | A(f) = {x} &nbsp; A(h) = {x} | {x}
-(g, h) | A(g) = {x} &nbsp; A(h) = {x} | {x}
+(f, g) | A(f) = {x}; A(g) = {x} | {x}
+(f, h) | A(f) = {x}; A(h) = {x} | {x}
+(g, h) | A(g) = {x}; A(h) = {x} | {x}
 
 Logo, LCOM(A) = 0, pois a classe A tem três possíveis pares de métodos, e todos eles acessam pelo menos um atributo em comum (veja terceira coluna da tabela). Não resta nenhum único par de métodos que não tem atributos em comum
 
@@ -90,9 +90,9 @@ void h() {
 
 Pares de Métodos (M) | Conjunto A | Interseção Conjunto A
 :-:|:-:|:-:
-(f, g) | A(f) = {x} &nbsp; A(g) = {y} | ∅
-(f, h) | A(f) = {x} &nbsp; A(h) = {z} | ∅
-(g, h) | A(g) = {y} &nbsp; A(h) = {z} | ∅
+(f, g) | A(f) = {x}; A(g) = {y} | ∅
+(f, h) | A(f) = {x}; A(h) = {z} | ∅
+(g, h) | A(g) = {y}; A(h) = {z} | ∅
 
 Logo, LCOM(B) = 3, pois a classe B tem três possíveis pares de métodos, e nenhum deles acessam pelo menos um atributo em comum (veja terceira coluna da tabela). restam todos par de métodos que não tem atributos em comum
 
