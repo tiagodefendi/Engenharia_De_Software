@@ -88,9 +88,9 @@ void m3(F p) {
 
 Pares de Métodos (M) | Conjunto A | Interseção Conjunto A
 :-:|:-:|:-:
-(m1, m2) | A(m1) = {f1, f2}, A(m2) = {f2, f3} | {f2}
-(m1, m3) | A(m1) = {f1, f2}, A(m3) = {f3} | ∅
-(m2, m3) | A(m2) = {f2, f3}, A(m3) = {f3} | {f3}
+(m1, m2) | A(m1) = {f1, f2} <br> A(m2) = {f2, f3} | {f2}
+(m1, m3) | A(m1) = {f1, f2} <br> A(m3) = {f3} | ∅
+(m2, m3) | A(m2) = {f2, f3} <br> A(m3) = {f3} | {f3}
 
 Logo, LCOM(A) = 1, pois a classe A tem três possíveis pares de métodos, mas dois deles acessam pelo menos um atributo em comum (veja terceira coluna da tabela). Resta um único par de métodos que não tem atributos em comum.
 
