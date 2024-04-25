@@ -1,7 +1,7 @@
 # 5. Qual das seguintes classes é mais coesa? Justifique computando os valores de LCOM de cada uma delas
 
-    ```{}
-    class A {
+```{}
+class A {
     X x = new X();
 
     void f() {
@@ -13,9 +13,9 @@
     void h() {
         x.m3();
     }
-    }
+}
 
-    class B {
+class B {
     X x = new X();
     Y y = new Y();
     Z z = new Z();
@@ -29,8 +29,8 @@
     void h() {
         z.m();
     }
-    }
-    ```
+}
+```
 
 ## Resposta:
 
@@ -45,9 +45,6 @@ Dessa forma, pode-se afirmar que a classe A é mais coesa que a classe B, tendo 
 LCOM(A):
 
 ```{}
-class A {
-X x = new X();
-
 void f() {
     x.m1();
 }
@@ -56,7 +53,6 @@ void g() {
 }
 void h() {
     x.m3();
-}
 }
 ```
 
@@ -71,11 +67,6 @@ Logo, LCOM(A) = 0, pois a classe A tem três possíveis pares de métodos, e tod
 LCOM(B):
 
 ```{}
-class B {
-X x = new X();
-Y y = new Y();
-Z z = new Z();
-
 void f() {
     x.m();
 }
@@ -84,7 +75,6 @@ void g() {
 }
 void h() {
     z.m();
-}
 }
 ```
 
@@ -95,4 +85,3 @@ Pares de Métodos (M) | Conjunto A | Interseção Conjunto A
 (g, h) | A(g) = {y} <br> A(h) = {z} | ∅
 
 Logo, LCOM(B) = 3, pois a classe B tem três possíveis pares de métodos, e nenhum deles acessam pelo menos um atributo em comum (veja terceira coluna da tabela). restam todos par de métodos que não tem atributos em comum
-
