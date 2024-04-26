@@ -37,7 +37,7 @@ A função onclick() está assumindo diversas responsabilidades para si.
     valor = textfield3.value();
     ```
 
-2. Acesso ao possível Banco de dados "BD":
+2. Acesso e uso do método get no Banco de dados "BD":
 
     ```{}
     c1 = BD.getConta(num1)
@@ -55,7 +55,7 @@ A função onclick() está assumindo diversas responsabilidades para si.
     }
     ```
 
-4. Trata exeções:
+4. Trata exceções:
 
     ```{}
     try {
