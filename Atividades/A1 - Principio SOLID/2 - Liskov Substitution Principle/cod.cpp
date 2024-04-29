@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdexcept>
 
 class Quadrilatero {
 protected:
@@ -15,15 +14,10 @@ public:
 
 class Quadrado : public Quadrilatero {
 public:
-    Quadrado(int lado) : Quadrilatero(lado, lado) {
-        if (largura != altura) {
-            throw std::invalid_argument("Erro: largura e altura diferentes!");
-        }
-    }
+    Quadrado(int lado) : Quadrilatero(lado, lado) {}
 };
 
 class Retangulo : public Quadrilatero {
 public:
     Retangulo(int larg, int alt) : Quadrilatero(larg, alt) {}
 };
-
