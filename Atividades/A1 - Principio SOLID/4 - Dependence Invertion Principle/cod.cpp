@@ -1,26 +1,34 @@
 #include <iostream>
 
-class Led {
+class Dispositivo {
 public:
-    void Ligar() {
+    virtual void Ligar() = 0;
+    virtual void Desligar() = 0;
+};
+
+class Led : public Dispositivo {
+public:
+    void Ligar() override {
         std::cout << "Led ligado" << std::endl;
     }
 
-    void Desligar() {
+    void Desligar() override {
         std::cout << "Led desligado" << std::endl;
     }
 };
 
 class PushButton {
 private:
-    Led led;
+    Dispositivo* dispositivo;
 
 public:
+    PushButton(Dispositivo* disp) : dispositivo(disp) {}
+
     void Acionar(bool input) {
         if (input) {
-            led.Ligar();
+            dispositivo->Ligar();
         } else {
-            led.Desligar();
+            dispositivo->Desligar();
         }
     }
 };
